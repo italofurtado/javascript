@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root{
+    --noonblue: #37afdf;
+    --white: #f3f3f3;
+    --darkestnight: #0d0111;
+    --deepforest: #001105;
+    --openocean: #0b023b;
+}
+
+html{
+    font-size: 16px; /* tamanho base */
+}
+
+body{
+    padding: 0;
+    margin:0 auto;
+    width:100%;
+    background-color: var(--darkestnight);
+
+}
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    margin:0 auto;
+
+}
+
+p{
+    font-family: "Open Sans","sans-serif";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+h1{
+    font-family: "Open Sans","sans-serif";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    color: var(--white);
+    text-align: center;
+}
+
+h3{
+    font-family: "Open Sans","sans-serif";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    color: var(--white);
+}
+
+#countdown{
+    width: 100%;
+    height: 6rem;
+    margin-bottom:2rem;
+}
+
+#counter {
+    position: absolute;
+    z-index: 100;
+    text-align:right;
+    line-height: 0;
+    width: 90%;
+    height: inherit;
+    box-sizing: border-box;
+    padding-right: 20px;
+    border: 0.2rem solid var(--white);
+    border-radius:20px;
+    box-shadow: inset var(--deepforest) 0px 2px 5px;
+
+
+}
+#clock label{
+    margin-left:-10px;
+}
+
+#timeLeft{
+    overflow:hidden;
+    width: 100%;
+    z-index:99;
+    height:inherit;
+    border-radius: 20px;
+    padding:inherit;
+    box-sizing: border-box;
+}
+
+#timeBar{
+    background-color: var(--noonblue);
+    z-index:99;
+    width: 100%;
+    height:inherit;
+    padding:inherit;
+    box-sizing: border-box;
+    transition: 0.1s ease 0.3s;
+}
+
+#timeOut{
+    background-color: var(--deepforest);
+    width: 100%;
+    height:inherit;
+    z-index:98;
+    border-radius: 20px;
+    padding:inherit;
+    box-sizing: border-box;
+
+}
+
+#reset{
+    margin: 0 auto;
+    width: 12rem;
+    height: 4rem;
+    font-family: "Open Sans";
+    font-weight: bold;
+    Font-Size: 1rem;
+    text-transform:uppercase;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    background-color: var(--openocean);
+    color: var(--white);
+
+}
+
+#reset:hover{
+    margin: 0 auto;
+    width: 12rem;
+    height: 4rem;
+    font-family: "Open Sans";
+    font-weight: bold;
+    Font-Size: 1rem;
+    text-transform:uppercase;
+    border-radius: 10px;
+    border: 1px solid var(--deepforest);
+    background-color: var(--white);
+    color: var(--darkestnight);
+    cursor: pointer;
+}
+
+#reset:active{
+    margin: 0 auto;
+    width: 12rem;
+    height: 4rem;
+    font-family: "Open Sans";
+    font-weight: bold;
+    Font-Size: 1rem;
+    text-transform:uppercase;
+    border-radius: 10px;
+    border: 1px solid var(--deepforest);
+    background-color: var(--deepforest);
+    color: var(--white);
+    cursor: pointer;
+}
